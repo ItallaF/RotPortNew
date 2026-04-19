@@ -1,0 +1,33 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Pin base -->
+  <path 
+    d="M12 22C12 22 5 15.5 5 10.5C5 6.9 8.1 4 12 4C15.9 4 19 6.9 19 10.5C19 15.5 12 22 12 22Z" 
+    fill="url(#gradientPin)"
+  />
+
+  <!-- Inner circle -->
+  <circle 
+    cx="12" 
+    cy="10.5" 
+    r="2.8" 
+    fill="#FFFFFF"
+  />
+
+  <!-- Inner dot -->
+  <circle 
+    cx="12" 
+    cy="10.5" 
+    r="1.4" 
+    fill="#27AE60"
+  />
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="gradientPin" x1="12" y1="4" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#27AE60"/>
+    </linearGradient>
+  </defs>
+
+</svg>

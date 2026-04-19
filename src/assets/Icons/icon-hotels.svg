@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 120 120" xmlns="http://w3.org">
+  <defs>
+    <linearGradient id="hotelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F80ED" />
+      <stop offset="100%" stop-color="#43A047" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(15, 15) scale(0.75)">
+    <path d="M15 30H55V90H15V30Z" fill="url(#hotelGradient)"/>
+    <path d="M55 45H85V90H55V45Z" fill="url(#hotelGradient)" fill-opacity="0.8"/>
+    <!-- Porta e Placa em Branco/Superfície -->
+    <rect x="25" y="15" width="20" height="10" rx="2" fill="#FFFFFF"/>
+    <rect x="30" y="75" width="10" height="15" rx="1" fill="#FFFFFF"/>
+    <!-- Janelas minimalistas -->
+    <path d="M22 40H30V50H22V40ZM34 40H42V50H34V40ZM22 55H30V65H22V55ZM34 55H42V65H34V55ZM62 55H78V59H62V55ZM62 65H78V69H62V65Z" fill="#F8FAFC"/>
+  </g>
+</svg>
