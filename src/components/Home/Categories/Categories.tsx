@@ -1,23 +1,16 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { styles } from "./Styles";
 import { AppIcon } from "../../AppIcon/Index";
-import { IconName } from "../../../../assets/Icons";
+import { categories } from "../../mocks/Categories";
+import { AppTabParamList } from "../../../routes/types";
 
-type Category = {
-  id: number;
-  name: string;
-  icon: IconName;
-};
+type NavigationProps = BottomTabNavigationProp<AppTabParamList>;
 
 export default function Categories() {
-
-  const categories: Category[] = [
-    { id: 1, name: "Atrações", icon: "attractions" },
-    { id: 2, name: "Hotéis", icon: "hotel" },
-    { id: 3, name: "Restaurantes", icon: "restaurant" },
-    { id: 4, name: "Eventos", icon: "events" },
-  ];
+  const navigation = useNavigation<NavigationProps>();
     
   return (
     <View style={styles.section}>
@@ -25,7 +18,7 @@ export default function Categories() {
 
       <View style={styles.grid}>
         {categories.map(item => (
-          <TouchableOpacity key={item.id} style={styles.card}>
+          <TouchableOpacity key={item.id} style={styles.card} onPress={() => navigation.navigate(item.route)}>
             <AppIcon name={item.icon} size={32} />
             <Text style={styles.cardText}>{item.name}</Text>
           </TouchableOpacity>
