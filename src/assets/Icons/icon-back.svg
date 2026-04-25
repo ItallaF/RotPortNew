@@ -1,0 +1,15 @@
+<svg width="100" height="100" viewBox="0 0 120 120" xmlns="http://w3.org">
+  <defs>
+    <linearGradient id="backGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F80ED" />
+      <stop offset="100%" stop-color="#43A047" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(15, 15) scale(0.75)">
+    <!-- Fundo Principal -->
+    <path d="M40 15L10 50L40 85V65H85V35H40V15Z" fill="url(#backGradient)" />
+    
+    <!-- Detalhe em Branco (Linha guia interna) -->
+    <path d="M42 35L23 50L42 65" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

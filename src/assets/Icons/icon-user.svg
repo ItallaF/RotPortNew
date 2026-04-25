@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 120 120" xmlns="http://w3.org">
+  <defs>
+    <linearGradient id="userGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F80ED" />
+      <stop offset="100%" stop-color="#43A047" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(15, 15) scale(0.75)">
+    <!-- Corpo e Cabeça com Gradiente -->
+    <circle cx="50" cy="35" r="20" fill="url(#userGradient)"/>
+    <path d="M10 90C10 70 30 60 50 60C70 60 90 70 90 90V95H10V90Z" fill="url(#userGradient)"/>
+    
+    <!-- Detalhe em Branco (Contorno interno para brilho) -->
+    <circle cx="50" cy="35" r="12" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M25 85C30 75 40 72 50 72C60 72 70 75 75 85" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>
