@@ -3,33 +3,38 @@ import { AttractionsTypes } from "../../types/Components/AttractionsTypes";
 
 export const attractions: AttractionsTypes[] = [
   {
-    id: 1,
+    id: '1',
     name: "Cachoeira do Serrado",
-    img: "Cachoeira",
+    image: require("../../assets/img/waterfall.jpg"),
+    category: "Natureza",
     route: ROUTES.HOME,
   },
   {
-    id: 2,
+    id: '2',
     name: "Praça Cel. Odion Coelho",
-    img: "Praça",
+    image: require("../../assets/img/waterfall.jpg"),
+    category: "Parque",
     route: ROUTES.HOME,
   },
   {
-    id: 3,
+    id: '3',
     name: "Mercado Municipal",
-    img: "Mercado",
+    image: require("../../assets/img/waterfall.jpg"),
+    category: "Comércio",
     route: ROUTES.HOME,
   },
   {
-    id: 4,
+    id: '4',
     name: "Parque Estadual Serra Nova e Talhado",
-    img: "Parque",
+    image: require("../../assets/img/waterfall.jpg"),
+    category: "Natureza",
     route: ROUTES.HOME,
   },
   {
-    id: 5,
+    id: '5',
     name: "Igreja São José do Gorutuba",
-    img: "Igreja",
+    image: require("../../assets/img/waterfall.jpg"),
+    category: "Religião",
     route: ROUTES.HOME,
   },
 ];
