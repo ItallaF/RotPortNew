@@ -1,7 +1,7 @@
 import { IconName } from "../../assets/Icons";
 import { AppTabParamList } from "../../routes/types";
 
-export type Category = {
+export type CategoryTypes = {
   id: number;
   name: string;
   icon: IconName;
