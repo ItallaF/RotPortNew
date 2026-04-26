@@ -2,14 +2,17 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { ROUTES } from '../routesNames';
-import AppNavigator from '../app/AppNavigator';
+import TabNavigator from '../Tabs/TabNavigator';
 
 const Stack = createNativeStackNavigator();
 
-export default function AuthNavigator() {
+export default function MainStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name={ROUTES.APP} component={AppNavigator} />
+      <Stack.Screen
+        name={ROUTES.APP}
+        component={TabNavigator}
+      />
     </Stack.Navigator>
   );
 }

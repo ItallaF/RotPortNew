@@ -1,13 +1,11 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { styles } from "./Styles";
 import { AppIcon } from "../../AppIcon/Index";
-import { categories } from "../../mocks/Categories";
-import { AppTabParamList } from "../../../routes/types";
+import { categories } from "../../Services/Categories";
+import { NavigationProps } from "../../../routes/types";
 
-type NavigationProps = BottomTabNavigationProp<AppTabParamList>;
 
 export default function Categories() {
   const navigation = useNavigation<NavigationProps>();

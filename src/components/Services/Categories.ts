@@ -1,8 +1,8 @@
 import { ROUTES } from "../../routes/routesNames";
-import { Category } from "../../types/Components/Category";
+import { CategoryTypes } from "../../types/Components/CategoryTypes";
 
 
-export const categories: Category[] = [
+export const categories: CategoryTypes[] = [
   {
     id: 1,
     name: "Atrações",

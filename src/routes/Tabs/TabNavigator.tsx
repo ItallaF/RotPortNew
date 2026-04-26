@@ -7,7 +7,7 @@ import { ROUTES } from '../routesNames';
 
 const Tab = createBottomTabNavigator();
 
-export default function AppNavigator() {
+export default function TabNavigator() {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen name={ROUTES.HOME} component={HomeStack} />
