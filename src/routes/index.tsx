@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AuthNavigator from './Auth/AuthNavigator';
+import MainStack from './Main/MainStack ';
 
 
 export default function Routes() {
   return (
     <NavigationContainer>
-      <AuthNavigator />
+      <MainStack />
     </NavigationContainer>
   );
 }

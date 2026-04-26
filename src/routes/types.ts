@@ -1,3 +1,5 @@
+import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
+
 export type RootStackParamList = {
   Login: undefined;
   Cadastro: undefined;
@@ -11,6 +13,8 @@ export type AppTabParamList = {
   Restaurants: undefined;
   Events: undefined;
 };
+
+export type NavigationProps = BottomTabNavigationProp<AppTabParamList>;
 
 export type HomeStackParamList = {
   Home: undefined;
