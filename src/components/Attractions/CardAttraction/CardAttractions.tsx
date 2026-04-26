@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./Styles";
 import { attractions } from "../../Services/Attractions";
@@ -9,21 +9,36 @@ export default function CardAttractions() {
   const navigation = useNavigation<NavigationProps>();
 
   return (
-    <View style={styles.containerConteudo}>
-      {attractions.map(item => (
-        <View key={item.id}>
-          <Text style={styles.buttonTextStyle}>{item.name}</Text>
-          <TouchableOpacity
-            onPress={() => navigation.navigate(item.route)}
-            activeOpacity={0.5}>
-            <Image
-              source={require(`../../../assets/img/waterfall.jpg`)}
-              style={styles.img}
-            />
-            <Text style={styles.texImage}>Ver mais</Text>
-          </TouchableOpacity>
-        </View>
-      ))}
-    </View>
-  )
+    <FlatList
+      data={attractions}
+      numColumns={2}
+      keyExtractor={(item) => item.id}
+      contentContainerStyle={styles.listContainer}
+      columnWrapperStyle={styles.columnWrapper}
+      renderItem={({ item }) => (
+        <TouchableOpacity
+          style={styles.card}
+          activeOpacity={0.8}
+          onPress={() => navigation.navigate(item.route)}
+        >
+          <Image
+            source={item.image}
+            style={styles.img}
+          />
+
+          <View style={styles.cardContent}>
+            <Text numberOfLines={2} style={styles.title}>
+              {item.name}
+            </Text>
+
+            <Text style={styles.category}>
+              {item.category}
+            </Text>
+
+            <Text style={styles.more}>Ver mais...</Text>
+          </View>
+        </TouchableOpacity>
+      )} 
+    />
+  );
 }

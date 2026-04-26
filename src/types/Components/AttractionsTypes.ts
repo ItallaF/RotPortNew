@@ -1,8 +1,10 @@
+import { ImageSourcePropType } from "react-native";
 import { AppTabParamList } from "../../routes/types";
 
 export type AttractionsTypes = {
-  id: number;
+  id: string;
   name: string;
-  img: string;
+  image: ImageSourcePropType;
+  category?: string;
   route: keyof AppTabParamList;
 };

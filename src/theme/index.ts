@@ -11,6 +11,7 @@ export const theme = {
     gradient: ["#2F80ED", "#43A047"],
 
     background: "#F8FAFC",
+    backgroundDark: "#f6f7f8",
     surface: "#FFFFFF",
 
     border: "#E5E7EB",
