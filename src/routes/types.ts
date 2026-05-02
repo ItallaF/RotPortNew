@@ -37,8 +37,6 @@ export type EventsStackParamList = {
 export type AppTabParamList = {
   HomeTab: NavigatorScreenParams<HomeStackParamList>;
   AttractionsTab: NavigatorScreenParams<AttractionsStackParamList>;
-  HotelsTab: NavigatorScreenParams<HotelsStackParamList>;
-  RestaurantsTab: NavigatorScreenParams<RestaurantsStackParamList>;
   EventsTab: NavigatorScreenParams<EventsStackParamList>;
 };
 
@@ -50,7 +48,13 @@ export type AppTabParamList = {
 export type RootStackParamList = {
   Login: undefined;
   Cadastro: undefined;
+
   App: NavigatorScreenParams<AppTabParamList>;
+
+  Details: {
+    id: string;
+    type: "event" | "attraction" | "hotel" | "restaurant";
+  };
 };
 
 

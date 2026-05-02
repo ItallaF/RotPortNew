@@ -9,7 +9,6 @@ export default function AttractionsStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Attractions" component={Attractions} />
-      {/* <Stack.Screen name="AttractionDetails" component={AttractionDetails} /> */}
     </Stack.Navigator>
   );
 }

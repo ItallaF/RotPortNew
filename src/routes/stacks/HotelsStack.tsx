@@ -11,7 +11,6 @@ export default function HotelsStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Hotels" component={Hotels} />
-      {/* <Stack.Screen name="EventDetails" component={EventDetails} /> */}
     </Stack.Navigator>
   );
 }

@@ -10,6 +10,7 @@ export const ROUTES = {
   HOTELS: 'Hotels',
   RESTAURANTS: 'Restaurants',
   EVENTS: 'Events',
+  DETAILS: 'Details',
 
   CACHOEIRA: 'Cachoeira',
 } as const;

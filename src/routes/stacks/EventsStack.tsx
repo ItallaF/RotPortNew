@@ -10,7 +10,6 @@ export default function EventsStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Events" component={Events} />
-      {/* <Stack.Screen name="EventDetails" component={EventDetails} /> */}
     </Stack.Navigator>
   );
 }

@@ -2,12 +2,12 @@ import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { attractions } from "../../Services/Attractions";
 import CardItens from "../../Card/CardItem";
-import { AttractionsNavigationProp } from "../../../routes/types";
+import { RootNavigationProp } from "../../../routes/types";
 
 export default function CardAttractions() {
-  const navigation = useNavigation<AttractionsNavigationProp>();
+  const navigation = useNavigation<RootNavigationProp>();
 
   return (
-    <CardItens data={attractions} onPressItem={() => navigation.navigate("Home")} />
+    <CardItens data={attractions} onPressItem={(item) => navigation.navigate("Details", { id: item.id, type: "attraction" })} />
   );
 }
