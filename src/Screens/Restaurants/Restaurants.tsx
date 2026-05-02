@@ -1,14 +1,14 @@
 import React from "react";
 import { ScrollView } from "react-native";
 import Header from "../../components/Header/Header";
-import CardAttractions from "../../components/Attractions/CardAttraction/CardAttractions";
 import { styles } from "../Styles";
+import CardRestaurants from "../../components/Restaurants/CardRestaurants/CardRestaurants";
 
-export default function Attractions() {
+export default function Restaurants() {
   return (
     <ScrollView style={styles.container}>
-      <Header title="Atrações" />
-      <CardAttractions />
+      <Header title="Restaurantes" />
+      <CardRestaurants />
     </ScrollView>
   );
 }
