@@ -23,9 +23,9 @@ export default function DetailsScreen() {
   }
 
   return (
-    <View style={styles.containerContent}>
+    <View style={styles.container}>
 
-      <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+      <ScrollView showsVerticalScrollIndicator={false} >
         <Hero
           image={data.image}
           title={data.name}

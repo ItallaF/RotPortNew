@@ -1,19 +1,20 @@
 import { StyleSheet } from "react-native";
+import { theme } from "../../../theme";
 
 export const styles = StyleSheet.create({
   actionBar: {
     flexDirection: "row",
-    padding: 16,
-    backgroundColor: "#fff",
+    padding: theme.spacing.lg,
+    backgroundColor: theme.colors.background,
     borderTopWidth: 1,
-    borderColor: "#eee",
+    borderColor: theme.colors.border,
   },
 
   favoriteBtn: {
     width: 50,
     height: 50,
-    borderRadius: 12,
-    backgroundColor: "#f3f4f6",
+    borderRadius: theme.radius.sm,
+    backgroundColor: theme.colors.backgroundDark,
     justifyContent: "center",
     alignItems: "center",
     marginRight: 10,
@@ -22,15 +23,15 @@ export const styles = StyleSheet.create({
   ctaBtn: {
     flex: 1,
     height: 50,
-    borderRadius: 12,
-    backgroundColor: "#2563eb",
+    borderRadius: theme.radius.sm,
+    backgroundColor: theme.colors.primaryDark,
     justifyContent: "center",
     alignItems: "center",
   },
 
   ctaText: {
-    color: "#fff",
-    fontWeight: "600",
-    fontSize: 16,
+    color: theme.colors.textLight,
+    fontWeight: theme.typography.h4.fontWeight as "600",
+    fontSize: theme.typography.h4.fontSize,
   },
 });

@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     },
   
     overlay: {
-      padding: theme.spacing.xl,
+      padding: theme.spacing.xxl,
       backgroundColor: "#0000004d",
     },
   
