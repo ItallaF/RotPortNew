@@ -34,7 +34,10 @@ export default function DetailsScreen() {
         <About category={data.category} />
 
       </ScrollView>
-      <ActionBar />
+      <ActionBar type={type}
+        data={{
+          name: data.name,
+        }} />
     </View>
   );
 }
