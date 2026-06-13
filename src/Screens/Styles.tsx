@@ -6,6 +6,11 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: theme.colors.backgroundDark,
   },
+
+  content: {
+    paddingTop: 16,
+  },
+
   text: {
     color: theme.colors.textPrimary,
     fontSize: 16,
