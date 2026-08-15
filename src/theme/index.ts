@@ -11,13 +11,13 @@ export const theme = {
     gradient: ["#2F80ED", "#43A047"],
 
     background: "#F8FAFC",
-    backgroundDark: "#f6f7f8",
+    backgroundDark: "#e6e6e681",
     surface: "#FFFFFF",
 
     border: "#E5E7EB",
 
     textPrimary: "#1F2937",
-    textSecondary: "#6B7280",
+    textSecondary: "#83878fa4",
     textLight: "#FFFFFF",
   },
 
@@ -26,6 +26,7 @@ export const theme = {
     h1: { fontSize: 24, fontWeight: "700" },
     h2: { fontSize: 20, fontWeight: "600" },
     h3: { fontSize: 18, fontWeight: "600" },
+    h4: { fontSize: 16, fontWeight: "600" },
 
     body: { fontSize: 14, fontWeight: "400" },
     caption: { fontSize: 12, color: "#6B7280" },
@@ -36,7 +37,8 @@ export const theme = {
     sm: 8,
     md: 12,
     lg: 16,
-    xl: 24,
+    xl: 20,
+    xxl: 24,
   },
 
   radius: {

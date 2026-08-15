@@ -6,4 +6,8 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: theme.colors.backgroundDark,
   },
+  text: {
+    color: theme.colors.textPrimary,
+    fontSize: 16,
+  }
 });

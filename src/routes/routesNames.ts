@@ -1,16 +1,13 @@
 export const ROUTES = {
   LOGIN: 'Login',
   CADASTRO: 'Cadastro',
+  PROFILE: 'Profile',
 
   APP: 'App',
 
   HOME: 'Home',
 
-  ATTRACTIONS: 'Attractions',
-  HOTELS: 'Hotels',
-  RESTAURANTS: 'Restaurants',
-  EVENTS: 'Events',
-  DETAILS: 'Details',
+  FAVORITES: 'Favorites',
 
   CACHOEIRA: 'Cachoeira',
 } as const;

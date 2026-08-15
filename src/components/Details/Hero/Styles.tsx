@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { theme } from "../../../theme";
 
 export const styles = StyleSheet.create({
   hero: {
@@ -14,17 +15,17 @@ export const styles = StyleSheet.create({
 
   backButton: {
     position: "absolute",
-    top: 20,
-    left: 20,
-    backgroundColor: "#fff",
-    padding: 5,
+    top: theme.spacing.xl,
+    left: theme.spacing.xl,
+    backgroundColor: theme.colors.backgroundDark,
+    padding: theme.spacing.xs,
     borderRadius: 50,
   },
 
   heroTitle: {
-    color: "#fff",
-    fontSize: 26,
-    fontWeight: "bold",
-    padding: 20,
+    color: theme.colors.textLight,
+    fontSize: theme.typography.h1.fontSize,
+    fontWeight:theme.typography.h1.fontWeight as "700",
+    padding: theme.spacing.xl,
   },
 });
