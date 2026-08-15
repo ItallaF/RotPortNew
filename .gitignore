@@ -1,6 +1,10 @@
 # OSX
 #
 .DS_Store
+.env
+.env.*
+google-services.json
+GoogleService-Info.plist
 
 # Xcode
 #
