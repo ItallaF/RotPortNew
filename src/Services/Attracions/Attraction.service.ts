@@ -6,7 +6,7 @@ class AttractionService {
       await attractionRepository.findAll();
 
     return attractions.sort((a, b) =>
-      a.name.localeCompare(b.name)
+      a.title.localeCompare(b.title)
     );
   }
 

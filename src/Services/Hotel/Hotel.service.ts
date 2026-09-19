@@ -6,7 +6,7 @@ class HotelService {
       await hotelRepository.findAll();
 
     return hotels.sort((a, b) =>
-      a.name.localeCompare(b.name)
+      a.title.localeCompare(b.title)
     );
   }
 
