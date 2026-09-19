@@ -29,7 +29,7 @@ export type RootStackParamList = {
 
   Details: {
     id: string;
-    type: "event" | "attraction" | "hotel" | "restaurant";
+    type: "event" | "attractions" | "hotel" | "restaurant";
   };
 };
 

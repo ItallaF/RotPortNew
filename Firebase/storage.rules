@@ -1,0 +1,32 @@
+rules_version = '2';
+
+service firebase.storage {
+
+  match /b/{bucket}/o {
+
+    match /attractions/{allPaths=**} {
+      allow read;
+      allow write: if false;
+    }
+
+    match /events/{allPaths=**} {
+      allow read;
+      allow write: if false;
+    }
+
+    match /restaurants/{allPaths=**} {
+      allow read;
+      allow write: if false;
+    }
+
+    match /hotels/{allPaths=**} {
+      allow read;
+      allow write: if false;
+    }
+
+    match /users/{userId}/{allPaths=**} {
+      allow read, write:
+        if request.auth.uid == userId;
+    }
+  }
+}
