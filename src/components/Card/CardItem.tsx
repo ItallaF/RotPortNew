@@ -23,13 +23,13 @@ export default function CardItens({ data, onPressItem }: CardItemProps) {
           onPress={() => onPressItem(item)}
         >
           <Image
-            source={item.image}
+            source={{ uri: item.image ?? "" }}
             style={styles.img}
           />
 
           <View style={styles.cardContent}>
             <Text numberOfLines={2} style={styles.title}>
-              {item.name}
+              {item.title}
             </Text>
 
             <Text style={styles.category}>
